@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0e1628;
+      --text:#eaf0ff;
+      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html><!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0e1628;
+      --text:#eaf0ff;
+      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html>
+      --panel:#0e1628;
+      --text:#eaf0ff;
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0e1628;
+      --text:#eaf0ff;
+      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html><!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0e1628;
+      --text:#eaf0ff;
+      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html><!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0e1628;
+      --text:#eaf0ff;
+      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html><!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0e1628;
+      --text:#eaf0ff;
+      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html><!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0e1628;
+      --text:#eaf0ff;
+      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html><!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style.css — .love::heart (demo responsive)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0e1628;
+      --text:#eaf0ff;
+      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html>      --muted:#8fa1b7;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+      background:linear-gradient(180deg,#0b1220,#0a0f1c);
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      padding:1rem;
+    }
+
+    .window{
+      width:100%;
+      max-width:600px;
+      background:var(--panel);
+      border-radius:1.25rem;
+      padding:1rem 1.25rem 1.5rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .dots{display:flex; gap:0.6rem; margin-bottom:0.6rem}
+    .dot{width:0.75rem; height:0.75rem; border-radius:50%}
+    .dot.red{background:#ff5f57}
+    .dot.yellow{background:#ffbd2e}
+    .dot.green{background:#28c840}
+    .rule{border-top:1px solid rgba(255,255,255,.08); margin:0.6rem 0 1rem}
+
+    pre{
+      margin:0;
+      background:#0b1324;
+      border-radius:0.75rem;
+      padding:0.9rem;
+      overflow:auto;
+      font-size:clamp(0.75rem, 2vw, 0.9rem);
+    }
+    code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", monospace;
+    }
+
+    .stage{
+      margin-top:1rem;
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:0.75rem;
+      padding:1.25rem;
+      display:grid;
+      place-items:center;
+    }
+    .love{
+      position:relative;
+      width:3rem;
+      height:3rem;
+    }
+    .love::before{
+      content:'❤';
+      font-family:'Te Amo Cata', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      transform:scaleX(-1);
+      height:100%;
+      background-color:black;
+      color:white;
+      border-radius:0.5rem;
+      font-size:1.6rem;
+    }
+    a{
+      display:block;
+      width:100%;
+      margin-top:1rem;
+      padding:0.8rem 1rem;
+      border-radius:0.75rem;
+      background:#ff5f57;
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:clamp(0.9rem, 2.5vw, 1rem);
+      transition:background .3s;
+    }
+    a:hover{background:#e03e3b}
+  </style>
+</head>
+<body>
+  <div class="window" aria-label="Style.css card">
+    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div class="rule"></div>
+
+    <pre><code>.love::before {
+  content: '❤';
+  font-family: 'Te Amo Cata';
+  position: absolute;
+  transform: scaleX(-1);
+  height: 100%;
+  background-color: black; /* antes: blck */
+  color: white;
+}</code></pre>
+
+    <div class="stage" role="region" aria-label="Demostración del selector">
+      <div class="love" title="Corazón estilizado"></div>
+    </div>
+
+    <a href="https://www.ejemplo.com" target="_blank" rel="noopener">Ir a la página</a>
+  </div>
+</body>
+</html>
